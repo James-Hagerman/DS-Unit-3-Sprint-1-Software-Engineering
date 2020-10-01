@@ -1,0 +1,15 @@
+#publicly available docker image "python" on docker hub will be pulled
+
+FROM python
+
+#creating directory helloworld in container (linux machine)
+
+RUN mkdir C:\Users\james\Documents\GitHub\lambdata-james-hagerman\lambdata2
+
+#copying helloworld.py from local directory to container's helloworld folder
+
+COPY __init__.py C:\Users\james\Documents\GitHub\lambdata-james-hagerman\lambdata2\lambdata_jh\__init__.py
+
+#running helloworld.py in container
+
+CMD python C:\Users\james\Documents\GitHub\lambdata-james-hagerman\lambdata2\lambdata_jh\__init__.py
